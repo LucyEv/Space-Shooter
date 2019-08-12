@@ -25,7 +25,8 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextShotTime) // Если подошло время следующего выстрела (текущее время Time.time больше, чем время следующего выстрела), то можно создавать выстрел
+        // Если подошло время следующего выстрела (текущее время Time.time больше, чем время следующего выстрела), то можно создавать выстрел
+        if (Time.time > nextShotTime && Input.GetButton("Fire1")) // встрел по кнопке мыши. Fire1 по умолчанию в Unity - левая кнопка мыши
         {
             Instantiate(lazerShot, gunPosition.position, Quaternion.identity);
             nextShotTime = Time.time + shotDelay; // каждый раз время следующего выстрела нужно переставить: текущее время + задержка
@@ -43,6 +44,6 @@ public class PlayerScript : MonoBehaviour
         float xPosition = Mathf.Clamp(Ship.position.x, xMin, xMax);
         float zPosition = Mathf.Clamp(Ship.position.z, zMin, zMax);
 
-        Ship.position = new Vector3(xPosition, 0, zPosition);
+        Ship.position = new Vector3(xPosition, Ship.position.y, zPosition);
     }
 }

@@ -4,6 +4,10 @@ Small Project in Unity (version 2019.1.11f1) making space shooter with explodes
 ## steps
 
 1.Creating spaceship
+2.Moving space-pic skroller
+3.Creating Astreoids
+4.Making Explodes as assets
+5.Moving Stars in the Sky
 
 ### interesting
 

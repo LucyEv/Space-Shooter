@@ -7,12 +7,10 @@ public class Scroller : MonoBehaviour
     public float speed; // параметр скорости можно менять снаружи, настраивая скорость движения космического фона
     private Vector3 startPosition; 
 
-
     private void Start()
     {
         startPosition = transform.position;
     }
-
      // Update is called once per frame - На каждый кадр
     void Update()
     {

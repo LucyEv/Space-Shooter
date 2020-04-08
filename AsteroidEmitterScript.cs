@@ -26,7 +26,7 @@ public class AsteroidEmitterScript : MonoBehaviour
 
             Vector3 newPosition = new Vector3(xPosition, yPosition, zPosition);
 
-            Instantiate(asteroid, newPosition, Quaternion.identity); // функция Instantiate создает астероид, в новой позиции, с пустым вращением
+            Instantiate(asteroid, newPosition, Quaternion.identity); // функция Instantiate создает астероид в новой позиции, с пустым вращением
 
             nextSpawn = Time.time + Random.Range(minDelay, maxDelay);
         }

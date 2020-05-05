@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,7 +25,7 @@ public class AsteroidScript : MonoBehaviour
             return;
         }
 
-        Instantiate(asteroidExplosion, transform.position, Quaternion.identity); // первый аргумент- что создать (взрыв), второй аргумент (где создать), третье - вращение (нулевое)
+        Instantiate(asteroidExplosion, transform.position, Quaternion.identity); // первый аргумент - что создать (взрыв), второй аргумент (где создать), третье - вращение (нулевое)
 
         if (other.tag == "Player")
         {

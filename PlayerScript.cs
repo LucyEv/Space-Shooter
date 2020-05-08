@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,7 +25,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         // Если подошло время следующего выстрела (текущее время Time.time больше, чем время следующего выстрела), то можно создавать выстрел
-        if (Time.time > nextShotTime && Input.GetButton("Fire1")) // встрел по кнопке мыши. Fire1 по умолчанию в Unity - левая кнопка мыши
+        if (Time.time > nextShotTime && Input.GetButton("Fire1")) // Встрел по кнопке мыши. Fire1 по умолчанию в Unity - левая кнопка мыши
         {
             Instantiate(lazerShot, gunPosition.position, Quaternion.identity);
             nextShotTime = Time.time + shotDelay; // каждый раз время следующего выстрела нужно переставить: текущее время + задержка

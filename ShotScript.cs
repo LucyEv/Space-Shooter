@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShotScript : MonoBehaviour
 {
     public float speed;
-    // Start is called before the first frame update
+    // Start is called before the 1st frame update
     void Start()
     {
         GetComponent<Rigidbody>().velocity = Vector3.forward * speed;

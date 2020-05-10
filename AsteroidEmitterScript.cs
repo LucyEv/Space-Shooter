@@ -14,11 +14,10 @@ public class AsteroidEmitterScript : MonoBehaviour
     {
         
     }
-
     // Update is called once per frame
     void Update()
     {
-      if (Time.time > nextSpawn) // если пришло время для создания нового астероида
+      if (Time.time > nextSpawn) // Если пришло время для создания нового астероида
         {
             float yPosition = transform.position.y;
             float zPosition = transform.position.z;

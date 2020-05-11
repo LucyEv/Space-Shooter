@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BoundaryScript : MonoBehaviour
 {
-    private void OnTriggerExit(Collider other) // срабатывает, когда другой коллайдер покидает(Exit) границы текущего коллайдера
+    private void OnTriggerExit(Collider other) // Cрабатывает, когда другой Коллайдер покидает(Exit) границы текущего Коллайдера
     {
         Destroy(other.gameObject);
     }

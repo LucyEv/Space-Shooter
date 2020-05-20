@@ -14,7 +14,7 @@ public class AsteroidScript : MonoBehaviour
     void Start()
     {
         Asteroid = GetComponent<Rigidbody>();
-        Asteroid.angularVelocity = Random.insideUnitSphere * rotationSpeed; // angularVelocity - угловая скорость, как вариант = new Vector3(50, 0, 0);
+        Asteroid.angularVelocity = Random.insideUnitSphere * rotationSpeed; // angularVelocity - угловая скорость, например, как вариант = new Vector3(50, 0, 0);
         Asteroid.velocity = Vector3.back * Random.Range(minSpeed, maxSpeed);
     }
     // срабатывает при столкновении с другим коллайдером
@@ -32,7 +32,7 @@ public class AsteroidScript : MonoBehaviour
             Instantiate(playerExplosion, other.transform.position, Quaternion.identity);
         }
 
-        Destroy(other.gameObject); // уничтожаем то, с чем столкнулся астероид
+        Destroy(other.gameObject); // уничтожаем объект, с которым столкнулся астероид
         Destroy(gameObject); // уничтожаем сам астероид
     }
 

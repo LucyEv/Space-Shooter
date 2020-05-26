@@ -33,7 +33,7 @@ public class AsteroidScript : MonoBehaviour
         }
 
         Destroy(other.gameObject); // уничтожаем объект, с которым столкнулся астероид / destroy the object that asteroid collided with
-        Destroy(gameObject); // уничтожаем сам астероид
+        Destroy(gameObject); // уничтожаем сам астероид / destroy the asteroid itself
     }
 
     // Update is called once per frame

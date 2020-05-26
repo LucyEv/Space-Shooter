@@ -32,7 +32,7 @@ public class AsteroidScript : MonoBehaviour
             Instantiate(playerExplosion, other.transform.position, Quaternion.identity);
         }
 
-        Destroy(other.gameObject); // уничтожаем объект, с которым столкнулся астероид
+        Destroy(other.gameObject); // уничтожаем объект, с которым столкнулся астероид / destroy the object that asteroid collided with
         Destroy(gameObject); // уничтожаем сам астероид
     }
 

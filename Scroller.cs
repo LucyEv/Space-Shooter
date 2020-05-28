@@ -15,7 +15,8 @@ public class Scroller : MonoBehaviour
      // Update is called once per frame - на каждый кадр
     void Update()
     {
-        float newPosition = Mathf.Repeat(Time.time * speed, transform.localScale.y); // функция Mathf.Repeat позволяет менять значение переменной (1-новая позиция, 2-граница) 0,1,2,..99,100 - 0,1..99 / function Mathf.Repeat allows to change the value of a variable (1-new position, 2-border)
+        float newPosition = Mathf.Repeat(Time.time * speed, transform.localScale.y); // функция Mathf.Repeat позволяет менять значение переменной (1-новая позиция, 2-граница) 0,1,2,..99,100 - 0,1..99 /
+                                                                                    // function Mathf.Repeat allows to change the value of a variable (1-new position, 2-border)
         transform.position = startPosition + Vector3.back * newPosition;
     }
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Scroller : MonoBehaviour
 {
-    public float speed; // параметр скорости можно изменять снаружи, настраивая скорость движения космического фона / the speed parameter can be changed outside by adjusting the speed of the cosmic background
+    public float speed; // параметр скорости можно изменять снаружи, настраивая скорость движения космического фона 
+                        // the speed parameter can be changed outside by adjusting the speed of the cosmic background
     private Vector3 startPosition; 
 
     private void Start()

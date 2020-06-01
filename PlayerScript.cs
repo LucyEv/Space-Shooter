@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float speed; // скорость коробля
-    public float tilt; // переменная, которая определяет угол наклона коробля
+    public float speed; // скорость корабля
+                        //ship speed
+    public float tilt; // переменная, которая определяет угол наклона корабля
+                       // variable that determines the tilt angle of the ship
     public float xMin, xMax, zMin, zMax; //граница движения корабля
 
     public GameObject lazerShot;

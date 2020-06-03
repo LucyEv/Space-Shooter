@@ -19,6 +19,7 @@ public class PlayerScript : MonoBehaviour
                             // delay between shots
 
     private float nextShotTime; //время следующего выстрела
+                                //next shot time
 
     // Start is called before the first frame update
     void Start()

@@ -44,6 +44,7 @@ public class PlayerScript : MonoBehaviour
         Ship.velocity = new Vector3(moveHorizontal, 0, moveVertical) * speed; // скорость в трехмерном пространстве
 
         Ship.rotation = Quaternion.Euler(tilt * Ship.velocity.z, 0, - tilt * Ship.velocity.x); // вращение корабля
+                                                                                               // ship rotation
 
         float xPosition = Mathf.Clamp(Ship.position.x, xMin, xMax);
         float zPosition = Mathf.Clamp(Ship.position.z, zMin, zMax);

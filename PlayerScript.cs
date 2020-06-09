@@ -29,7 +29,8 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Если пришло время следующего выстрела (текущее время (Time.time) больше, чем время следующего выстрела), то можно создавать выстрел
+        // Если пришло время следующего выстрела (т.е. текущее время (Time.time) больше, чем время следующего выстрела), то можно создавать выстрел
+        // If it's time for the next shot (i.e. the current time (Time.time) is more than the time for the next shot), then create a shot
         if (Time.time > nextShotTime && Input.GetButton("Fire1")) // Встрел по кнопке мыши. Fire1 по умолчанию в Unity - левая кнопка мыши
         {
             Instantiate(lazerShot, gunPosition.position, Quaternion.identity);

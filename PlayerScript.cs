@@ -43,6 +43,7 @@ public class PlayerScript : MonoBehaviour
         Rigidbody Ship = GetComponent<Rigidbody>();
 
         Ship.velocity = new Vector3(moveHorizontal, 0, moveVertical) * speed; // скорость в трехмерном пространстве
+                                                                              // speed in three-dimensional space
 
         Ship.rotation = Quaternion.Euler(tilt * Ship.velocity.z, 0, - tilt * Ship.velocity.x); // вращение корабля
                                                                                                // ship rotation

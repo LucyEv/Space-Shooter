@@ -10,7 +10,6 @@ public class PlayerScript : MonoBehaviour
                        // variable that determines the tilt angle of the ship
     public float xMin, xMax, zMin, zMax; //граница движения корабля
                                          //ship boundary
-
     public GameObject lazerShot;
 
     public Transform gunPosition;

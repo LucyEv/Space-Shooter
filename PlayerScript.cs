@@ -20,7 +20,7 @@ public class PlayerScript : MonoBehaviour
     private float nextShotTime; //время следующего выстрела
                                 //next shot time
 
-    // Start is called before the first frame update
+// Start is called before the first frame update
     void Start()
     {
         
@@ -51,7 +51,7 @@ public class PlayerScript : MonoBehaviour
 
         float xPosition = Mathf.Clamp(Ship.position.x, xMin, xMax);
         float zPosition = Mathf.Clamp(Ship.position.z, zMin, zMax);
-
+        
         Ship.position = new Vector3(xPosition, Ship.position.y, zPosition);
     }
 }

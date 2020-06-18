@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public float speed; // скорость корабля
-                        //ship speed
+                        //ship's speed
     public float tilt; // переменная, которая определяет угол наклона корабля
                        // variable that determines the tilt angle of the ship
     public float xMin, xMax, zMin, zMax; //граница движения корабля
-                                         //ship movement boundary
+                                         //ship's movement boundary
     public GameObject lazerShot;
 
     public Transform gunPosition;
@@ -47,7 +47,7 @@ public class PlayerScript : MonoBehaviour
                                                                               // speed in three-dimensional space
 
         Ship.rotation = Quaternion.Euler(tilt * Ship.velocity.z, 0, - tilt * Ship.velocity.x); // вращение корабля
-                                                                                               // ship rotation
+                                                                                               // ship's rotation
 
         float xPosition = Mathf.Clamp(Ship.position.x, xMin, xMax);
         float zPosition = Mathf.Clamp(Ship.position.z, zMin, zMax);

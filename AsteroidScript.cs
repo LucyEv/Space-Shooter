@@ -18,7 +18,8 @@ public class AsteroidScript : MonoBehaviour
                                                                             // angularVelocity - for example, as an option = new Vector3 (50, 0, 0);
         Asteroid.velocity = Vector3.back * Random.Range(minSpeed, maxSpeed);
     }
-    // срабатывает при столкновении с другим коллайдером
+    // срабатывает при столкновении с другим коллайдером;
+    // triggered by collision with another collider;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "GameBoundary" || other.tag == "Asteroid")

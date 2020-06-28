@@ -7,7 +7,7 @@ public class PlayerScript : MonoBehaviour
     public float speed; // скорость корабля
                         //ship's speed
     public float tilt; // переменная, которая определяет угол наклона корабля
-                       // variable that determines the tilt angle of the ship
+                       // variable that determines the ship's tilt angle 
     public float xMin, xMax, zMin, zMax; //граница движения корабля
                                          //ship's movement boundary
     public GameObject lazerShot;
@@ -34,8 +34,8 @@ public class PlayerScript : MonoBehaviour
                                                                   // Shot on the mouse button. Fire1 by default in Unity - left mouse button
         {
             Instantiate(lazerShot, gunPosition.position, Quaternion.identity);
-            nextShotTime = Time.time + shotDelay; // время следующего каждый раз выстрела нужно переставить: текущее время + задержка
-                                                  //the time of the next shot each time needs to be rearranged: current time + delay
+            nextShotTime = Time.time + shotDelay; // время следующего выстрела каждый раз нужно переставить: текущее время + задержка
+                                                  //the time of the next shot needs to be rearranged each time: current time + delay
         }
 
         float moveHorizontal = Input.GetAxis("Horizontal");

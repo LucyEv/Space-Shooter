@@ -14,8 +14,8 @@ public class AsteroidScript : MonoBehaviour
     void Start()
     {
         Asteroid = GetComponent<Rigidbody>();
-        Asteroid.angularVelocity = Random.insideUnitSphere * rotationSpeed; // angularVelocity - угловая скорость, например, как вариант = new Vector3(50, 0, 0);
-                                                                            // angularVelocity - for example, as an option = new Vector3 (50, 0, 0);
+        Asteroid.angularVelocity = Random.insideUnitSphere * rotationSpeed; // angularVelocity - угловая скорость, как пример = new Vector3(50, 0, 0);
+                                                                            // angularVelocity - for example = new Vector3 (50, 0, 0);
         Asteroid.velocity = Vector3.back * Random.Range(minSpeed, maxSpeed);
     }
     // срабатывает при столкновении с другим коллайдером;

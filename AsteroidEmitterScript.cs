@@ -9,7 +9,7 @@ public class AsteroidEmitterScript : MonoBehaviour
                                      // a delay between exits of Asteroids
 
     private float nextSpawn; // время следующего создания астероида 
-                             // time for creation next Asteroid
+                             // time for creation the next Asteroid
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class AsteroidEmitterScript : MonoBehaviour
     void Update()
     {
       if (Time.time > nextSpawn) // если пришло время для создания нового астероида 
-                                 // if it's time to create new Asteroid
+                                 // if it's time to create a new Asteroid
         {
             float yPosition = transform.position.y;
             float zPosition = transform.position.z;

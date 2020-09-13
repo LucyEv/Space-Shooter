@@ -5,7 +5,7 @@ using UnityEngine;
 public class AsteroidEmitterScript : MonoBehaviour
 {
     public GameObject asteroid;
-    public float minDelay, maxDelay; // задержка между вылетами астероидов 
+    public float minDelay, maxDelay; // задержка между временем вылета астероидов 
                                      // a delay between exits of Asteroids
 
     private float nextSpawn; // время следующего создания астероида 
@@ -24,7 +24,7 @@ public class AsteroidEmitterScript : MonoBehaviour
         {
             float yPosition = transform.position.y;
             float zPosition = transform.position.z;
-            float xPosition = Random.Range(-transform.localScale.x/2, transform.localScale.x/2); // влево -половина, вправо +половина / left minus half, right plus half
+            float xPosition = Random.Range(-transform.localScale.x/2, transform.localScale.x/2); // влево -половина, вправо +половина / left: minus half, right: plus half
 
             Vector3 newPosition = new Vector3(xPosition, yPosition, zPosition);
 

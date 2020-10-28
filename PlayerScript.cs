@@ -6,7 +6,7 @@ public class PlayerScript : MonoBehaviour
 {
     public float spead; // скорость корабля
                         //ship's speed
-    public float tilt; // переменная, которая определяет угол наклона корабля
+    public float tilt; // переменная, определяющая угол наклона корабля
                        // variable that determines the ship's tilt angle 
     public float xMin, xMax, zMin, zMax; //граница движения корабля
                                          //ship's movement boundary

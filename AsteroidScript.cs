@@ -10,6 +10,7 @@ public class AsteroidScript : MonoBehaviour
     public GameObject playerExplosion;
 
     private Rigidbody Asteroid;
+    // Запуск вызывается перед обновлением первого кадра
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,7 @@ public class AsteroidScript : MonoBehaviour
         }
 
         Instantiate(asteroidExplosion, transform.position, Quaternion.identity); // первый аргумент - что создать (взрыв), второй аргумент - где создать, третье - вращение (нулевое);
-                                                                                // the first argument is what to create (explosion), the second argument is where to create, the third is rotation (zero)
+                                                                                 // the first argument is what to create (explosion), the second argument is where to create, the third is rotation (zero)
         if (other.tag == "Player")
         {
             Instantiate(playerExplosion, other.transform.position, Quaternion.identity);

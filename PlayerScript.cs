@@ -15,10 +15,10 @@ public class PlayerScript : MonoBehaviour
     public Transform gunPosition;
 
     public float shotDelay; // задержка между выстрелами
-                            // delay between shots
+                            // delay between the shots
 
     private float nextShotTime; //время следующего выстрела
-                                //next shot time
+                                //next shot's time
 
 // Start is called before the first frame update
     void Start()

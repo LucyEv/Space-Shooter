@@ -17,6 +17,7 @@ public class AsteroidEmitterScript : MonoBehaviour
     {
         
     }
+    // Обновление производится один раз за кадр
     // Update is called once per frame
     void Update()
     {

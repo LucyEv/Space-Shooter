@@ -11,6 +11,7 @@ public class AsteroidEmitterScript : MonoBehaviour
     private float nextSpawn; // время следующего создания астероида 
                              // time for creation the next Asteroid
 
+    // Start запускается перед обновлением первого кадра
     // Start is called before the first frame update
     void Start()
     {

@@ -43,6 +43,7 @@ public class AsteroidScript : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Обновление вызывается один раз за кадр
     void Update()
     {
         

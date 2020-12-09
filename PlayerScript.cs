@@ -20,6 +20,7 @@ public class PlayerScript : MonoBehaviour
     private float nextShotTime; //время следующего выстрела
                                 //next shot's time
 
+// Запуск вызывается перед обновлением первого кадра
 // Start is called before the first frame update
     void Start()
     {

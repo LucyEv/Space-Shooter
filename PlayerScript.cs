@@ -27,6 +27,7 @@ public class PlayerScript : MonoBehaviour
         
     }
     // Update is called once per frame
+    // Обновление вызывается один раз за кадр
     void Update()
     {
         // Если пришло время следующего выстрела т.е. текущее время (Time.time) больше, чем время следующего выстрела, то можно создавать выстрел

@@ -37,7 +37,7 @@ public class PlayerScript : MonoBehaviour
         {
             Instantiate(lazerShot, gunPosition.position, Quaternion.identity);
             nextShotTime = Time.time + shotDelay; // время следующего выстрела каждый раз нужно переставить: текущее время + задержка
-                                                  //the time of the next shot needs to be rearranged each time: current time + delay
+                                                  // the time of the next shot needs to be rearranged each time: current time + delay
         }
 
         float moveHorizontal = Input.GetAxis("Horizontal");

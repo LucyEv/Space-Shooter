@@ -29,8 +29,8 @@ public class AsteroidScript : MonoBehaviour
             return;
         }
 
-        Instantiate(asteroidExplosion, transform.position, Quaternion.identity); // первый аргумент - что создать (взрыв), второй аргумент - где создать, третье - вращение (нулевое);
-                                                                                 // the first argument is what to create (explosion), the second argument is where to create, the third is rotation (zero)
+        Instantiate(asteroidExplosion, transform.position, Quaternion.identity); // первый аргумент - "что" - создать (взрыв), второй аргумент - "где" создать, третье - вращение (нулевое);
+                                                                                 // the first argument is what - to create (explosion), the second argument is where to create, the third is rotation (zero)
         if (other.tag == "Player")
         {
             Instantiate(playerExplosion, other.transform.position, Quaternion.identity);
@@ -44,6 +44,7 @@ public class AsteroidScript : MonoBehaviour
 
     // Update is called once per frame
     // Обновление вызывается один раз за кадр
+    
     void Update()
     {
         

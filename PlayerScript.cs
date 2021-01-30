@@ -16,7 +16,6 @@ public class PlayerScript : MonoBehaviour
 
     public float shotDelay; // задержка между выстрелами
                             // delay between the shots
-
     private float nextShotTime; //время следующего выстрела
                                 //next shot's time
 

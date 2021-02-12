@@ -22,7 +22,7 @@ public class AsteroidEmitterScript : MonoBehaviour
     void Update()
     {
       if (Time.time > nextSpawn) // если пришло время для создания нового астероида 
-                                 // if it's time to create a new Asteroid
+                                 // if it is time to create a new Asteroid
         {
             float yPosition = transform.position.y;
             float zPosition = transform.position.z;
@@ -32,7 +32,7 @@ public class AsteroidEmitterScript : MonoBehaviour
             Vector3 newPosition = new Vector3(xPosition, yPosition, zPosition);
 
             Instantiate(asteroid, newPosition, Quaternion.identity); // Функция Instantiate создает астероид в новой позиции с пустым вращением
-                                                                    // Function Instantiate creates an asteroid in a new position with empty rotation
+                                                                     // Function Instantiate creates an asteroid in a new position with empty rotation
 
             nextSpawn = Time.time + Random.Range(minDelay, maxDelay);
         }

@@ -6,7 +6,7 @@ public class AsteroidEmitterScript : MonoBehaviour
 {
     public GameObject asteroid;
     public float minDelay, maxDelay; // задержка между временем вылета астероидов 
-                                     // delay between exits of Asteroids
+                                     // delay between the time of exits of Asteroids
 
     private float nextSpawn; // время следующего создания астероида 
                              // time for creation the next Asteroid

@@ -8,7 +8,7 @@ public class AsteroidEmitterScript : MonoBehaviour
     public float minDelay, maxDelay; // задержка между временем вылета астероидов 
                                      // delay between the time of exits of Asteroids
 
-    private float nextSpawn; // время следующего создания астероида 
+    private float nextSpawn; // время создания следующего астероида 
                              // time for creation the next Asteroid
 
     // Start запускается перед обновлением первого кадра

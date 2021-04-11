@@ -6,7 +6,7 @@ public class PlayerScript : MonoBehaviour
 {
     public float spead; // скорость корабля
                         //ship's speed
-    public float tilt; // переменная, определяющая угол наклона корабля
+    public float tilt; // переменная, которая определяет угол наклона корабля
                        // variable that determines the ship's tilt angle 
     public float xMin, xMax, zMin, zMax; //граница движения корабля
                                          //ship's movement boundary
@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
 
     public Transform gunPosition;
 
-    public float shotDelay; // задержка между выстрелами
+    public float shotDelay; // задержка-время между выстрелами
                             // delay between the shots
     private float nextShotTime; //время следующего выстрела
                                 //next shot's time
